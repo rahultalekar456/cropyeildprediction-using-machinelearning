@@ -1,0 +1,35 @@
+{
+    "Karnataka": {
+      "Bagalkot": ["Sugarcane", "Maize", "Groundnut", "Sunflower"],
+      "Ballari": ["Rice", "Maize", "Groundnut", "Sugarcane"],
+      "Belagavi": ["Sugarcane", "Maize", "Soybean", "Groundnut"],
+      "Bengaluru Rural": ["Vegetables", "Fruits", "Flowers"],
+      "Bengaluru Urban": ["Vegetables", "Fruits", "Flowers"],
+      "Bidar": ["Jowar", "Pulses", "Groundnut", "Soybean"],
+      "Chamarajanagar": ["Ragi", "Maize", "Jowar", "Tobacco"],
+      "Chikkaballapur": ["Sugarcane", "Tomato", "Silk", "Mango"],
+      "Chikkamagaluru": ["Coffee", "Pepper", "Cardamom", "Areca"],
+      "Chitradurga": ["Jowar", "Ragi", "Groundnut", "Sugarcane"],
+      "Dakshina Kannada": ["Coconut", "Arecanut", "Cocoa", "Cashew"],
+      "Davanagere": ["Ragi", "Jowar", "Maize", "Sugarcane"],
+      "Dharwad": ["Maize", "Peanut", "Sunflower", "Cotton"],
+      "Gadag": ["Peanut", "Sugarcane", "Soybean", "Groundnut"],
+      "Hassan": ["Coffee", "Sugarcane", "Paddy", "Coconut"],
+      "Haveri": ["Maize", "Sugarcane", "Sunflower", "Paddy"],
+      "Kalaburagi": ["Jowar", "Soybean", "Groundnut", "Cotton"],
+      "Kodagu": ["Coffee", "Black pepper", "Cardamom", "Vanilla"],
+      "Kolar": ["Tomato", "Onion", "Silk", "Mango"],
+      "Koppal": ["Jowar", "Pulses", "Groundnut", "Soybean"],
+      "Mandya": ["Sugarcane", "Paddy", "Maize", "Wheat"],
+      "Mysuru": ["Sugarcane", "Silk", "Paddy", "Coconut"],
+      "Raichur": ["Pulses", "Sugarcane", "Cotton", "Jowar"],
+      "Ramanagara": ["Silk", "Tomato", "Vegetables", "Fruits"],
+      "Shivamogga": ["Areca", "Paddy", "Sugarcane", "Maize"],
+      "Tumakuru": ["Groundnut", "Maize", "Sugarcane", "Ragi"],
+      "Udupi": ["Coconut", "Arecanut", "Cocoa", "Cashew"],
+      "Uttara Kannada": ["Paddy", "Areca", "Coconut", "Cashew"],
+      "Vijayapura": ["Sugarcane", "Maize", "Groundnut", "Sunflower"],
+      "Yadgir": ["Jowar", "Pulses", "Groundnut", "Soybean"]
+    }
+  }
+  

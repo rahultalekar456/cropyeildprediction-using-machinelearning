@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}
+{% endblock %}
+
+{% block style %}
+<style>
+        body {
+            text-align: center;
+        }
+        .scheme-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 70%;
+            margin-left: 15%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .scheme-box h3 {
+            margin-top: 0;
+        }
+        .scheme-details {
+            margin-bottom: 10px;
+        }
+        .scheme-button {
+            background-color: #007bff;
+            color: rgb(10, 10, 10);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .scheme-button:hover {
+            background-color: #0056b3;
+            color: #000;
+        }
+</style>
+{% endblock %}
+
+{% block index %}
+{% endblock %}
+
+{% block content %}
+    <div style="padding-bottom: 8%;">
+        <h1 style="font-size: 10vh;">List of Schemes</h1><br>
+        {% for scheme in schemes %}
+        <div class="scheme-box">
+            <h3>{{ scheme.name }}</h3>
+            <div class="scheme-details">
+                <p><strong>Type:</strong> {{ scheme.type }}</p>
+                <p><strong>Eligibility:</strong> {{ scheme.eligibility }}</p>
+                <p><strong>Details:</strong> {{ scheme.details }}</p>
+            </div>
+            <a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1946816" class="scheme-button" target="_blank">Visit Govt Website</a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Google Translate Code -->
+    <div id="google_translate_element"></div>
+
+{% endblock %}
+
+{% block script%}
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- End Google Translate Code -->
+{% endblock %}
+

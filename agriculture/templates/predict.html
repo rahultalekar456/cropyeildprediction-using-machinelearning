@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}
+{% endblock %}
+
+{% block style %}
+<style>
+    /* Internal CSS styles */
+    div {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    form {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: inline-block;
+        width: 120px; /* Adjust width as needed */
+        text-align: left;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 200px; /* Adjust width as needed */
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+</style>
+{% endblock %}
+{% block navbar %}
+{% endblock %}
+{% block index %}
+{% endblock %}
+
+{% block content %}
+<div style="text-align: center;">
+    <br>
+    <h1 style="font-size:8vh;font-style: normal;"><b>Enter Crop Data</b></h1>   
+    <hr>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.Nitrogen.label_tag }}
+            {{ form.Nitrogen }}
+        </div>
+        <div class="form-group">
+            {{ form.Phosphorous.label_tag }}
+            {{ form.Phosphorous }}
+        </div>
+        <div class="form-group">
+            {{ form.Potassium.label_tag }}
+            {{ form.Potassium }}
+        </div>
+        <div class="form-group">
+            {{ form.temperature.label_tag }}
+            {{ form.temperature }}
+        </div>
+        <div class="form-group">
+            {{ form.humidity.label_tag }}
+            {{ form.humidity }}
+        </div>
+        <div class="form-group">
+            {{ form.ph.label_tag }}
+            {{ form.ph }}
+        </div>
+        <div class="form-group">
+            {{ form.rainfall.label_tag }}
+            {{ form.rainfall }}
+        </div>
+        <button type="submit">Predict</button><br>
+        <a href="/">HOME</a>
+    </form>
+</div>
+{% endblock %}
+
+
